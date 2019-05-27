@@ -1,0 +1,43 @@
+{
+  // IntelliSense を使用して利用可能な属性を学べます。
+  // 既存の属性の説明をホバーして表示します。
+  // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "gzipReceive",
+      "program": "${workspaceFolder}/stream/gzip_server/gzipReceive.js",
+      "cwd": "${workspaceFolder}/stream/gzip_server/receive"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "gzipSend",
+      "program": "${workspaceFolder}/stream/gzip_server/gzipSend.js",
+      "args": [
+        "IMG_5021.JPG",
+        "localhost"
+      ],
+      "cwd": "${workspaceFolder}/stream/gzip_server/send"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "useReplaceStream",
+      "program": "${workspaceFolder}/stream/transform/useReplaceStream.js",
+      "cwd": "${workspaceFolder}/stream/transform/"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "checkUrls",
+      "program": "${workspaceFolder}/stream/parallel/checkUrls.js",
+      "args": [
+        "urlList.txt"
+      ],
+      "cwd": "${workspaceFolder}/stream/parallel/"
+    },
+  ]
+}
